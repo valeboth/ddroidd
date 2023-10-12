@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Second Page</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="secondstyle.css" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <div class="logo">
+          <img src="../img/ddroidd_logo.svg" alt="Logo" />
+        </div>
+      </a>
+      <h2>Autumn-Winter Bootcamp</h2>
+    </header>
+    <main>
+      <h2>Application Form</h2>
+
+      <div class="form-section">
+        <h2>Contact Information</h2>
+        <form>
+          <div class="form-group">
+            <label for="first-name">First Name:</label>
+            <input
+              type="text"
+              id="first-name"
+              name="first-name"
+              placeholder="Enter your first name"
+              required
+            />
+            <div class="error-message" id="first-name-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name:</label>
+            <input
+              type="text"
+              id="last-name"
+              name="last-name"
+              placeholder="Enter your last name"
+              required
+            />
+            <div class="error-message" id="first-name-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="phone-number">Phone Number:</label>
+            <input
+              type="tel"
+              id="phone-number"
+              name="phone-number"
+              placeholder="Enter your phone number"
+              required
+            />
+            <div class="error-message" id="first-name-error"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+            <div class="error-message" id="first-name-error"></div>
+          </div>
+        </form>
+      </div>
+
+      <div class="form-section">
+        <h2>Address</h2>
+        <form>
+          <label for="address1">Address line 1</label>
+          <input type="text" id="address1" name="address1" required />
+          <div class="error-message" id="first-name-error"></div>
+          <label for="address2">Address line 2</label>
+          <input type="text" id="address2" name="address2" />
+        </form>
+      </div>
+
+      <div class="form-section">
+        <form>
+          <label for="country">Country:</label>
+          <select id="country" name="country"></select>
+          <label for="region">Region:</label>
+          <select id="region" name="region"></select>
+          <label for="city">City:</label>
+          <select id="city" name="city"></select>
+        </form>
+      </div>
+      <div class="join-us">
+        <button class="join-us-button">Join Us</button>
+    </main>
+
+    <footer>
+      <h4>Come to the dark side... we have 🍪</h4>
+    </footer>
+    <script src="./app.mjs" type="module"></script>
+  </body>
+</html>
